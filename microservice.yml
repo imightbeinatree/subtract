@@ -16,11 +16,13 @@ microservice:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      secure: false
       description: 'integer which num2 will be subtracted from'
     num2:
       param_type: 'Numeric'
       regex: '^[0-9]+$'
       required: true
+      secure: false
       description: 'integer which will be subtracted from num1'
   outputs:
     result:
