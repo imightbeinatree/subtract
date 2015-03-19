@@ -1,0 +1,28 @@
+microservice:
+  name: 'subtract'
+  description: 'A go program which takes in two arguments that should both be integers and outputs a json object containing one key "result".'
+  docker_image: 'imightbeinatree/integer_subtract'
+  docker_image_tag: '0.4'
+  github_url: 'https://github.com/imightbeinatree/subtract'
+  docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/integer_subtract/'
+  category: 'math'
+  tags: ['math', 'subtract', 'integers']
+  developer_name: 'imbiat'
+  developer_type: 'User'
+  published: true
+  command: '/integer_subtract [num1] [num2]'
+  inputs:
+    num1:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+      description: 'integer which num2 will be subtracted from'
+    num2:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+      description: 'integer which will be subtracted from num1'
+  outputs:
+    result:
+      param_type: 'Numeric'
+      description: 'result of subtracting num2 from num1'

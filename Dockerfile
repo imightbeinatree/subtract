@@ -10,5 +10,5 @@
 
 FROM scratch
 ADD ./integer_subtract /integer_subtract
-ADD ./runner /runner
+ADD ./microservice.yml /microservice.yml
 
