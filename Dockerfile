@@ -11,4 +11,3 @@
 FROM scratch
 ADD ./integer_subtract /integer_subtract
 ADD ./microservice.yml /microservice.yml
-

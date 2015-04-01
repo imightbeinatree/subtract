@@ -1,8 +1,9 @@
 microservice:
+  spec_version: '2.0'
   name: 'subtract'
   description: 'A go program which takes in two arguments that should both be integers and outputs a json object containing one key "result".'
   docker_image: 'imightbeinatree/integer_subtract'
-  docker_image_tag: '0.4'
+  docker_image_tag: '0.5'
   github_url: 'https://github.com/imightbeinatree/subtract'
   docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/integer_subtract/'
   category: 'math'
